@@ -6,7 +6,7 @@
   2) Survivability estimate for cancer [statCan](https://www.statcan.gc.ca/search/results/site-search?q=13100158&fq=stclac:2&wb-srch-sub=search)
 
   The key guiding questions that will help preprocess and shape this dataset are:
-    1)What is the survivability rate for different demographics(race), in the SEER datasets
-    2)What is the survivability rate of breast cancer in Canada vs USA
+  1) What is the survivability rate for different demographics(race), in the SEER datasets
+  2) What is the survivability rate of breast cancer in Canada vs USA
 
-  
+
