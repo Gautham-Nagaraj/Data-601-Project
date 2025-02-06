@@ -31,4 +31,16 @@
       ![image](https://github.com/user-attachments/assets/88a7ee0d-ac87-487c-b7a5-edb515aafe58)
       
   ### Calculating overall survivability rate of patients based on race
-  1) 
+  1) We can use a pivot_table() to create a smaller dataframe which includes race and values as status with aggfunc as mean, to obtain the average survivability rate of each race.
+  2) The races have been divided into 3 groups -  1) 'Other' - American Indian, AK Native, Asian, Pacific Islander  2) White 3) Black
+  3) The pivot table provides us the average survivability rate of each of the group meantioned above.
+     ![image](https://github.com/user-attachments/assets/2847bee8-5846-48be-b175-670e22a3be34)
+  4) It gives a clear image that shows the rate is lowest when in comes to the black race.
+  5) This could be due to a number of factors, like the total number of black patients, overall, are less which could influnce the mean or the age of the patients are very different for each race which causes a bias, since people older people have  a higher mortality rate vs younger patients.
+  6) We can extract the count of each race using the column name, and a condtion along with .agg('count') to get the exact number of patients for each race.
+     ![image](https://github.com/user-attachments/assets/62dfedca-163d-4094-86f8-3c76f756f86d)
+  7) We can see that there is a difference in the number of patients between each demographic, which affects the mean.
+  8) To check if age is a factor, we can create another pivot table which includes race, age as index and affunc as mean, to obtain the average age of each demographic.
+     ![image](https://github.com/user-attachments/assets/fcdd50a5-bde0-4781-a36e-a2b9de193687)
+  9) The average age is approximately equal for all races, so we can discard age as a bias.
+      
