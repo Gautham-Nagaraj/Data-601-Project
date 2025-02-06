@@ -40,7 +40,15 @@
   6) We can extract the count of each race using the column name, and a condtion along with .agg('count') to get the exact number of patients for each race.
      ![image](https://github.com/user-attachments/assets/62dfedca-163d-4094-86f8-3c76f756f86d)
   7) We can see that there is a difference in the number of patients between each demographic, which affects the mean.
-  8) To check if age is a factor, we can create another pivot table which includes race, age as index and affunc as mean, to obtain the average age of each demographic.
+  8) To check if age is a factor, we can create another pivot table which includes race, age as index and aggfunc as mean, to obtain the average age of each demographic.
      ![image](https://github.com/user-attachments/assets/fcdd50a5-bde0-4781-a36e-a2b9de193687)
   9) The average age is approximately equal for all races, so we can discard age as a bias.
-      
+
+  ### Calculating  survivability rate of patients based on relationship status
+  1) We can another pivot table as done previously using index as marital status and values as status along with the aggfunc mean.
+     ![image](https://github.com/user-attachments/assets/65917579-5f1d-4298-9cdd-bdef825d9efe)
+  2) As we have seen previously the number of patients can bias the average, which is the case here as-well.
+  3) Printing out the count of each unique value in the marital status using the unique() function, gives us the count of each martial status group:
+     ![image](https://github.com/user-attachments/assets/b04f5c2b-4466-4d49-baf0-c639e54440e6)
+  4) It is better practice to use a for loop rather than maunally hard-code a print statement for each unique value in the column.
+  5) We will get a better understanding of the data once the visualization is done.
