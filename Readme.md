@@ -3,12 +3,13 @@
 ## Introduction and Datasets:
   We will be using 2 datasets in this project: 
   1) SEER dataset [IEEE dataport](https://ieee-dataport.org/open-access/seer-breast-cancer-data)
-  2) Survivability estimate for cancer [statCan](https://www.statcan.gc.ca/search/results/site-search?q=13100158&fq=stclac:2&wb-srch-sub=search)
+  2) Survivability estimate for cancer [statCan](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310015801)
 
   The key guiding questions that will help preprocess and shape this dataset are:
-  1) What is the survivability rate for different demographics(race), in the SEER datasets
-  2) What is the survivability rate of breast cancer in Canada vs USA
-  3) What is the survivability rate of Married vs Un-Married(Single, Divorced, Widowed) pateients
+  1) What is the survivability rate for different demographics(race), in the SEER datasets.
+  2) What is the survivability rate of Married vs Un-Married(Single, Divorced, Widowed) patients.
+  3) What is the survivability rate of breast cancer in Canada vs USA.
+  4) What are the most important factors that affect the survivability months using PCA.
 
 
 ## Data pre-processing:
@@ -52,3 +53,11 @@
      ![image](https://github.com/user-attachments/assets/b04f5c2b-4466-4d49-baf0-c639e54440e6)
   4) It is better practice to use a for loop rather than maunally hard-code a print statement for each unique value in the column.
   5) We will get a better understanding of the data once the visualization is done.
+
+  ### Calculating survivability rate of patients based on country (USA vs Canada)
+  1) ![image](https://github.com/user-attachments/assets/a42fb0bf-a312-4a29-9662-f4aa6c96cfb4)
+  2) The above table gives us the stats for breast cancer survivability rate from 2006-2010 obtained from [statCan](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310015801).
+  3) The statcan is an website that stores open data and can be used by citing the source.
+  4) Since we were unable to acquire the dataset, we use the table to calculate the average survivability across different age-groups from 2006-2010.
+  5) Calculating these results give us a 87% survivability rate for Canada and 85% survivability rate for the US.
+  6) These reults contradict our initial findings that the US has the best cancer treatment in the world, however is it is key to note that The results obtained above are based on sample data and do not represent the actual statistics. 
