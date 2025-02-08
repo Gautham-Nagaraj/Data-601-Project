@@ -1,7 +1,7 @@
 #  Data 601 Project breast cancer statistics in females
 
 ## Introduction and Datasets:
-  We will be using 2 datasets in this project: 
+  We will be using 1 dataset and 1 statistical inference in this project: 
   1) SEER dataset [IEEE dataport](https://ieee-dataport.org/open-access/seer-breast-cancer-data)
   2) Survivability estimate for cancer [statCan](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310015801)
 
