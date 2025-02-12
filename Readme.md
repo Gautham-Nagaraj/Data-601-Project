@@ -67,35 +67,45 @@ Visualizations:
 1. **Histogram: Distribution of Survival Months.**
 
 **What it shows:**
+![image](https://github.com/user-attachments/assets/197a6626-e1ff-4c6c-acf1-00d44e72bce9)
 
 This shows the spread of survival over the months for all patients. Peaks show typical survival times. It is a right skewed distribution which shows while there are some very long survival times, most people have relatively short survival times.
 
 2.**Bar Chart: Survivability by Race**
 
 **What it shows:**
+![image](https://github.com/user-attachments/assets/e86b7c40-0a98-4dce-9835-0866d97d4928)
+
 
 The average survival rates for each demographic group. A higher survival rate means a larger number of survivors in that specific demographic group.
 
 3.**Bar Chart: Survivability by Marital Status**
 
 **What it shows:**
+![image](https://github.com/user-attachments/assets/0a9d4511-0cf7-49f0-84c7-aff741474196)
+
 
 Compares survival rates based on marital status ie. divorced, married, single and widowed. Married patients have a higher survival rate compared to all the other groups. This may indicate that social support may impact survivability.
 
 4.**Scatter Plot: Survival months vs. tumor size**
 
 **What it shows:**
+![image](https://github.com/user-attachments/assets/058d76ca-9e28-44e2-9304-2106c0687625)
 
 This shows how tumer size relates to survival. Each point is a patient and the colour represents whether they are alive or dead. Yellow = alive and Purple = dead. Larger tumer sizes are associated with lower survival. This could help us with early detection.
 
 5.**Heatmap: Correlation matrix of survival factors**
 
 **What it shows:**
+![image](https://github.com/user-attachments/assets/5993c8eb-cd7b-4f88-bdb0-3861373a062f)
+
 
 It shows how strongly different variables are realted.A strong correlations being closer to 1 while inverse being closer to -1. key correlations: Survival Months vs. Tumor Size, Survival Months vs. Age, Survival Months vs. Regional Node Positive.
 
 6.**Box Plot: Survival months across different groups**
 **What it shows:**
+![image](https://github.com/user-attachments/assets/7ea70c5e-aea2-4bb6-af1b-47cd011ec63d)
+
 
 The spread and distrubution of survival times across different races. It shows the variations in survival outcomes in different racial groups which could help us identify inequalities in cancer care.
 
