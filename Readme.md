@@ -61,9 +61,15 @@
   4) Since we were unable to acquire the dataset, we use the table to calculate the average survivability across different age-groups from 2006-2010.
   5) Calculating these results give us a 87% survivability rate for Canada and 85% survivability rate for the US.
   6) These reults contradict our initial findings that the US has the best cancer treatment in the world, however is it is key to note that The results obtained above are based on sample data and do not represent the actual statistics.
+### Outlier Handling
+1) Identifying Outliers:
+     - Used box plots to detect extreme values.
+     - Applied IQR (Interquartile Range) method to identify and filter outliers beyond 1.5 times the IQR.
+     - Checked the distribution of features before and after outlier removal.
+2) Handling: Dropped extreme cases only when they were statistically significant anomalies.
 
-Visualizations:
-
+## Visualizations:
+ 
 1. **Histogram: Distribution of Survival Months.**
 
 **What it shows:**
@@ -108,9 +114,19 @@ It shows how strongly different variables are realted.A strong correlations bein
 
 
 The spread and distrubution of survival times across different races. It shows the variations in survival outcomes in different racial groups which could help us identify inequalities in cancer care.
-
-**Summary:**
-
+## Principle Component Analysis
+Purpose: Reduce the number of correlated features while retaining key information.
+### Implementation:
+1. Standardization:
+    Applied StandardScaler from sklearn.preprocessing to normalize data before PCA.
+2. Computing PCA Components:
+    Used sklearn.decomposition.PCA to extract principal components.
+    Plotted explained variance ratio to determine the optimal number of components.
+3. Feature Contribution Analysis:
+    Examined PCA loading scores to identify which original features contributed most to PC1 and PC2.
+    Visualized PCA results using scatter plots to observe data separation.
+## Summary:
 - Race and marital status impacts survivability; Married patients usually survive more.
 - Tumer sizes correlate to survivalbility. Larger tumer size is related to low months of survival while smaller tumer size is related to high months of survival.
 - Some racial groups have low survival rate, hence showing the need for more targeted interventions.
+- Determined which featues are most affecting the period of survival of patients.
