@@ -60,4 +60,47 @@
   3) The statcan is an website that stores open data and can be used by citing the source.
   4) Since we were unable to acquire the dataset, we use the table to calculate the average survivability across different age-groups from 2006-2010.
   5) Calculating these results give us a 87% survivability rate for Canada and 85% survivability rate for the US.
-  6) These reults contradict our initial findings that the US has the best cancer treatment in the world, however is it is key to note that The results obtained above are based on sample data and do not represent the actual statistics. 
+  6) These reults contradict our initial findings that the US has the best cancer treatment in the world, however is it is key to note that The results obtained above are based on sample data and do not represent the actual statistics.
+
+Visualizations:
+
+1. **Histogram: Distribution of Survival Months.**
+
+**What it shows:**
+
+This shows the spread of survival over the months for all patients. Peaks show typical survival times. It is a right skewed distribution which shows while there are some very long survival times, most people have relatively short survival times.
+
+2.**Bar Chart: Survivability by Race**
+
+**What it shows:**
+
+The average survival rates for each demographic group. A higher survival rate means a larger number of survivors in that specific demographic group.
+
+3.**Bar Chart: Survivability by Marital Status**
+
+**What it shows:**
+
+Compares survival rates based on marital status ie. divorced, married, single and widowed. Married patients have a higher survival rate compared to all the other groups. This may indicate that social support may impact survivability.
+
+4.**Scatter Plot: Survival months vs. tumor size**
+
+**What it shows:**
+
+This shows how tumer size relates to survival. Each point is a patient and the colour represents whether they are alive or dead. Yellow = alive and Purple = dead. Larger tumer sizes are associated with lower survival. This could help us with early detection.
+
+5.**Heatmap: Correlation matrix of survival factors**
+
+**What it shows:**
+
+It shows how strongly different variables are realted.A strong correlations being closer to 1 while inverse being closer to -1. key correlations: Survival Months vs. Tumor Size, Survival Months vs. Age, Survival Months vs. Regional Node Positive.
+
+6.**Box Plot: Survival months across different groups**
+**What it shows:**
+
+The spread and distrubution of survival times across different races. It shows the variations in survival outcomes in different racial groups which could help us identify inequalities in cancer care.
+
+**Summary:**
+
+- Race and marital status impacts survivability; Married patients usually survive more.
+- Tumer sizes correlate to survivalbility. Larger tumer size is related to low months of survival while smaller tumer size is related to high months of survival.
+- Some racial groups have low survival rate, hence showing the need for more targeted interventions.
